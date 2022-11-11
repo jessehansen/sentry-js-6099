@@ -31,7 +31,7 @@ const SayHelloButtonAndResponse = () => {
         <button
           type="button"
           style={{ fontSize: "24pt", marginRight: "24pt" }}
-          onClick={() => refetch()}
+          onClick={() => refetch({ delay: 0 })}
         >
           Do It
         </button>
