@@ -12,6 +12,7 @@ const delayMs = (ms: number) =>
 
 const resolvers = {
   Query: {
+    // @ts-ignore Not a problem
     async sayHello(_root, { delay }, _context) {
       await delayMs(delay);
       return `Hello World! The time is currently ${new Date()}`;
